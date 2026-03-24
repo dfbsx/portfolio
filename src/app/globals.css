@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #efe8de;
+  --surface: #faf6f0;
+  --elevated: #e8dfd4;
+  --border: rgba(10, 10, 10, 0.06);
+  --text: #3a3633;
+  --muted: #6f6860;
+  --ink: #0a0a0a;
+  --accent: #e11d74;
+  --accent-soft: #fcd4e8;
+  --blob-1: rgba(248, 168, 200, 0.45);
+  --blob-2: rgba(255, 182, 193, 0.38);
+  --blob-3: rgba(245, 224, 200, 0.75);
+  --blob-accent: rgba(225, 29, 116, 0.14);
+  --dot: rgba(10, 10, 10, 0.055);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1816;
+    --surface: #242120;
+    --elevated: #2e2b29;
+    --border: rgba(250, 246, 240, 0.08);
+    --text: #f2ebe4;
+    --muted: #a89f96;
+    --ink: #faf6f0;
+    --accent: #ff6ba3;
+    --accent-soft: rgba(255, 107, 163, 0.12);
+    --blob-1: rgba(225, 29, 116, 0.2);
+    --blob-2: rgba(255, 160, 180, 0.1);
+    --blob-3: rgba(212, 188, 160, 0.08);
+    --blob-accent: rgba(255, 107, 163, 0.12);
+    --dot: rgba(250, 246, 240, 0.06);
+  }
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+}
