@@ -1,5 +1,7 @@
+import type { PortfolioHeaderMark } from "@/components/home/sections/shared";
+
 export type ExperienceEntry = {
-  logo: string;
+  mark: PortfolioHeaderMark;
   title: string;
   org: string;
   orgUrl?: string;
@@ -10,13 +12,22 @@ export type ExperienceEntry = {
 };
 
 export type EducationEntry = {
-  logo: string;
+  mark: PortfolioHeaderMark;
   degree: string;
   school: string;
   schoolUrl?: string;
   range: string;
   location: string;
   highlights: readonly string[];
+};
+
+export type AchievementEntry = {
+  mark: PortfolioHeaderMark;
+  title: string;
+  range: string;
+  location: string;
+  highlights: readonly string[];
+  tags: readonly string[];
 };
 
 export type ProjectPreview = {
@@ -86,7 +97,7 @@ export const skillGroups = [
 /** Career history (aligned with LinkedIn). */
 export const experiences: ExperienceEntry[] = [
   {
-    logo: "BY",
+    mark: { kind: "icon", name: "building" },
     title: "Junior Software Engineer",
     org: "Bayer Sp. z o.o.",
     range: "Jan 2025 — Present",
@@ -100,7 +111,7 @@ export const experiences: ExperienceEntry[] = [
     stack: ["TypeScript", "React", "Next.js", "Storybook", "Chromatic", "Jest", "Git"],
   },
   {
-    logo: "BY",
+    mark: { kind: "icon", name: "building" },
     title: "Intern Full-stack Developer",
     org: "Bayer Sp. z o.o.",
     range: "Oct 2023 — Jan 2025",
@@ -113,7 +124,7 @@ export const experiences: ExperienceEntry[] = [
     stack: ["Gatsby", "TypeScript", "React", "Scrum", "Component testing", "Git"],
   },
   {
-    logo: "DC",
+    mark: { kind: "icon", name: "design" },
     title: "Web Designer",
     org: "DevCodi",
     range: "Feb 2023 — May 2023",
@@ -126,7 +137,7 @@ export const experiences: ExperienceEntry[] = [
     stack: ["Figma", "UI", "UX"],
   },
   {
-    logo: "ES",
+    mark: { kind: "icon", name: "code" },
     title: "Frontend Developer",
     org: "Europa Systems Rzeszów Sp. z o.o.",
     range: "Sep 2022 — Sep 2022 (1 mo.)",
@@ -140,7 +151,7 @@ export const experiences: ExperienceEntry[] = [
 
 export const education: EducationEntry[] = [
   {
-    logo: "M",
+    mark: { kind: "icon", name: "graduation" },
     degree: "Master's degree, Computer Engineering (Cybersecurity)",
     school: "Politechnika Rzeszowska im. Ignacego Łukasiewicza",
     range: "Feb 2024 — Jul 2025",
@@ -150,7 +161,7 @@ export const education: EducationEntry[] = [
     ],
   },
   {
-    logo: "B",
+    mark: { kind: "icon", name: "graduation" },
     degree: "Bachelor's degree, Computer Engineering",
     school: "Politechnika Rzeszowska im. Ignacego Łukasiewicza",
     range: "Oct 2020 — Jan 2024",
@@ -161,9 +172,9 @@ export const education: EducationEntry[] = [
   },
 ];
 
-export const achievements = [
+export const achievements: AchievementEntry[] = [
   {
-    logo: "LU",
+    mark: { kind: "icon", name: "cloud" },
     title: "LevelUp Program",
     range: "Sep-Nov 2025 (3-month program)",
     location: "Perspektywy Foundation, Remote",
@@ -174,7 +185,7 @@ export const achievements = [
     tags: ["Cloud computing", "DevOps", "Big data"],
   },
   {
-    logo: "AW",
+    mark: { kind: "icon", name: "award" },
     title: "Advanced Web Design Certificate",
     range: "Nov 24-26, 2023",
     location: "Best Design Week, Warsaw",
@@ -184,7 +195,7 @@ export const achievements = [
     ],
     tags: ["UX", "UI", "Figma", "Case study"],
   },
-] as const;
+];
 
 export const projectPreviews: ProjectPreview[] = [
   {

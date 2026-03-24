@@ -1,5 +1,5 @@
 import { achievements } from "@/components/home/sections/homeData";
-import { IconCalendar, IconMapPin, SectionShell } from "@/components/home/sections/shared";
+import { IconCalendar, IconMapPin, PortfolioHeaderMarkView, SectionShell } from "@/components/home/sections/shared";
 
 export function AchievementsSection() {
   return (
@@ -18,12 +18,7 @@ export function AchievementsSection() {
           >
             <div className="p-6 sm:p-7">
               <div className="flex gap-4 sm:gap-5">
-                <div
-                  className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-amber-200/60 bg-gradient-to-br from-amber-50 to-rose-50 text-sm font-extrabold tracking-tight text-amber-900 shadow-sm dark:border-amber-200/60 dark:from-amber-50 dark:to-rose-50 dark:text-amber-950"
-                  aria-hidden
-                >
-                  {a.logo}
-                </div>
+                <PortfolioHeaderMarkView mark={a.mark} variant="rose" />
                 <div className="min-w-0 flex-1">
                   <h4 className="text-lg font-bold leading-snug text-stone-900 sm:text-xl dark:text-stone-900">
                     {a.title}
@@ -43,7 +38,7 @@ export function AchievementsSection() {
               <ul className="mt-5 space-y-2.5 border-t border-stone-200/50 pt-5 text-sm leading-relaxed text-stone-600 dark:border-stone-200/50 dark:text-stone-600">
                 {a.highlights.map((line, i) => (
                   <li key={`${a.title}-ach-${i}`} className="flex gap-2.5">
-                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-amber-400" aria-hidden />
+                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-rose-400" aria-hidden />
                     <span>{line}</span>
                   </li>
                 ))}

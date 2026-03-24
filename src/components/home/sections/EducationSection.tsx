@@ -1,5 +1,11 @@
 import { education } from "@/components/home/sections/homeData";
-import { IconCalendar, IconExternalLink, IconMapPin, SectionShell } from "@/components/home/sections/shared";
+import {
+  IconCalendar,
+  IconExternalLink,
+  IconMapPin,
+  PortfolioHeaderMarkView,
+  SectionShell,
+} from "@/components/home/sections/shared";
 
 export function EducationSection() {
   return (
@@ -18,12 +24,7 @@ export function EducationSection() {
           >
             <div className="p-6 sm:p-7">
               <div className="flex gap-4 sm:gap-5">
-                <div
-                  className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-rose-200/60 bg-gradient-to-br from-rose-50 to-amber-50 text-sm font-extrabold tracking-tight text-rose-800 shadow-sm dark:border-rose-200/60 dark:from-rose-50 dark:to-amber-50 dark:text-rose-900"
-                  aria-hidden
-                >
-                  {ed.logo}
-                </div>
+                <PortfolioHeaderMarkView mark={ed.mark} variant="rose" />
                 <div className="min-w-0 flex-1">
                   <h4 className="text-lg font-bold leading-snug text-stone-900 sm:text-xl dark:text-stone-900">
                     {ed.degree}
