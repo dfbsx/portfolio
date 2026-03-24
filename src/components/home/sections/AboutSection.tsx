@@ -19,17 +19,17 @@ export function AboutSection() {
           </h2>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-stone-600 dark:text-stone-600">
             <p>
-              I turn product and brand intent into interfaces that feel intentional: clear hierarchy,
-              readable type, and motion that supports the story instead of distracting from it. Most
-              of my work lives in React and Next.js, with a tight loop between Figma exploration and
-              production code.
+              I care about interfaces that stay legible, on-brand, and pleasant to use — clear
+              hierarchy, thoughtful type, and motion that supports the story. Today most of my
+              shipping work is on a product web team (React, Next.js, TypeScript), with a strong
+              loop between specs in Figma and components in Storybook.
             </p>
             <p>
-              Accessibility and performance are part of the craft, not a late audit - semantic
-              structure, keyboard flows, and Core Web Vitals matter as much as the visual polish.
-              I&apos;m happiest collaborating with designers and PMs who care about the same
-              details, whether we&apos;re shipping a marketing site, a dashboard, or a design
-              system.
+              My path mixed engineering school at PRz with hands-on design: I&apos;ve designed a
+              product end to end and now focus on frontend delivery, tests, and accessibility
+              alongside design. I still reach for Canva for posters and infographics when the medium
+              fits. I do my best work with people who sweat the same details in design reviews and
+              code review.
             </p>
           </div>
         </div>

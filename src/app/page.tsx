@@ -21,7 +21,7 @@ export default function Home() {
                     <span className="text-stone-500 dark:text-stone-500">
                       &lt;
                     </span>
-                    frontend_developer
+                    design_minded_frontend
                     <span className="text-stone-500 dark:text-stone-500">
                       {" "}
                       /&gt;
@@ -33,24 +33,26 @@ export default function Home() {
                   <h1 className="text-[1.65rem] font-extrabold leading-[1.05] tracking-[-0.035em] text-stone-900 [text-shadow:_0_1px_0_rgb(255_255_255/_0.9)] min-[420px]:text-4xl sm:text-5xl sm:leading-[1.02] lg:text-6xl lg:leading-[0.98] xl:text-[4rem] xl:leading-[0.96] dark:text-stone-900">
                     Dominika
                   </h1>
-                  <p className="mt-2 text-lg font-bold tracking-tight text-transparent sm:mt-3 sm:text-xl lg:text-2xl">
-                    <span className="bg-gradient-to-r from-rose-800 via-pink-700 to-amber-900 bg-clip-text dark:from-rose-800 dark:via-pink-700 dark:to-amber-900">
-                      Front-End Developer.
-                    </span>
+                  <p className="mt-2 text-lg font-bold tracking-tight sm:mt-3 sm:text-xl lg:text-2xl">
+                    <span className="bg-gradient-to-r from-rose-800 via-pink-700 to-amber-900 bg-clip-text text-transparent dark:from-rose-800 dark:via-pink-700 dark:to-amber-900">
+                      Design-minded
+                    </span>{" "}
+                    <span className="text-stone-900 dark:text-stone-900">front-end engineering</span>
                   </p>
                   <p className="mt-1 font-mono text-[11px] text-stone-600 sm:mt-2 sm:text-xs dark:text-stone-600">
                     <span className="text-stone-500 dark:text-stone-500">
                       $
                     </span>{" "}
-                    ship_ui_with_react
+                    figma_to_storybook_to_prod
                     <span className="animate-pulse text-rose-600 dark:text-rose-600">
                       ▌
                     </span>
                   </p>
                   <p className="mt-4 max-w-lg text-sm leading-relaxed text-stone-700 sm:mt-6 sm:text-base lg:text-lg dark:text-stone-700">
-                    I design and build fast, accessible interfaces — from
-                    systems in Figma to polished Next.js apps you&apos;d be
-                    proud to ship.
+                    I&apos;m a Junior Software Engineer at Bayer, shipping UI in React and Next.js
+                    with Storybook and Chromatic. I started in web design, still live in Figma and
+                    Canva for exploration, and I care about accessibility and the handoff from design
+                    intent to production code.
                   </p>
 
                   <div className="mt-6 flex flex-col gap-5 sm:mt-10 sm:flex-row sm:flex-wrap sm:items-center sm:gap-6">

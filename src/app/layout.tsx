@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | Portfolio",
   },
   description:
-    "Portfolio of a frontend developer and product designer focused on accessible, polished interfaces.",
+    "Dominika Fergisz — design-minded front-end engineering: React, Next.js, Figma, and accessible UIs.",
 };
 
 export default function RootLayout({
