@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+Personal portfolio site for **Dominika Fergisz** — frontend developer and designer. Built with Next.js as a static-friendly marketing and work showcase.
 
-First, run the development server:
+## Tech stack
+
+- **Next.js** 16 (App Router)
+- **React** 19
+- **TypeScript**
+- **Tailwind CSS** 4
+
+## Features
+
+- **Home** — Hero, about, experience, education, achievements, skills, projects, contact CTA
+- **Projects** — Grouped into code (GitHub), Figma designs, and Canva graphics (lightbox for static artwork)
+- **Skills** and **About** pages
+- **Responsive** layout with light/dark styling via CSS variables
+- Fonts: **Plus Jakarta Sans** and **JetBrains Mono** (Google Fonts)
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command        | Description              |
+| -------------- | ------------------------ |
+| `npm run dev`  | Development server       |
+| `npm run build`| Production build         |
+| `npm run start`| Serve production build   |
+| `npm run lint` | ESLint                   |
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+| What to change        | Where |
+| --------------------- | ----- |
+| Name, email, socials  | `src/components/hero-constants.ts` |
+| Hero portrait         | `public/photo.png` |
+| Career, education, skills, project cards | `src/components/home/sections/homeData.ts` |
+| Projects page copy    | `src/app/projects/page.tsx` |
+| Site metadata         | `src/app/layout.tsx` |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Add or replace images under `public/` and point to them from `homeData` or page data.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy
 
-## Deploy on Vercel
+The app is a standard Next.js project and deploys cleanly on [Vercel](https://vercel.com) (or any Node host). Connect the Git repository, use the default Next.js preset, and set no extra env vars unless you add features that need them.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Private / all rights reserved unless you choose to add an open license.
