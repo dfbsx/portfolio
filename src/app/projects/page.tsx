@@ -13,6 +13,7 @@ type ProjectItem = {
   tags: readonly string[];
   year: string;
   href?: string;
+  liveHref?: string;
   /** Local preview for Canva pieces (lightbox). */
   image?: string;
   kind: "code" | "design" | "canva";
@@ -37,6 +38,17 @@ const projects: ProjectItem[] = [
     tags: ["Next.js", "TypeScript", "UI"],
     year: "2024",
     href: "https://github.com/dfbsx/PoznajmySie",
+    kind: "code",
+  },
+  {
+    name: "Letsmeet2026",
+    role: "Product UI · Next.js",
+    description:
+      "Refreshed PoznajmySie app with mocked backend for interactive testing and temporary account flow.",
+    tags: ["Next.js", "TypeScript", "UI"],
+    year: "2026",
+    href: "https://github.com/dfbsx/letsmeet2026",
+    liveHref: "https://letsmeet2026.vercel.app/",
     kind: "code",
   },
   {
@@ -111,7 +123,17 @@ export default function ProjectsPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-6">
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
+            {project.liveHref ? (
+              <a
+                href={project.liveHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-[var(--muted)] transition hover:text-[var(--accent)]"
+              >
+                Live demo →
+              </a>
+            ) : null}
             {project.href ? (
               <a
                 href={project.href}
@@ -123,12 +145,12 @@ export default function ProjectsPage() {
                   ? "Open in Figma →"
                   : "View repository →"}
               </a>
-            ) : (
+            ) : !project.liveHref ? (
               <span className="text-sm font-medium text-[var(--muted)] transition group-hover:text-[var(--accent)]">
                 Case study coming soon →
               </span>
-            )}
-          </p>
+            ) : null}
+          </div>
         </li>
       ))}
     </ul>

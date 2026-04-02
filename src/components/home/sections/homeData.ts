@@ -36,6 +36,8 @@ export type ProjectPreview = {
   tags: readonly string[];
   image: string;
   href?: string;
+  /** Optional deployed demo (e.g. Vercel) when `href` is the repo or another primary link. */
+  liveHref?: string;
   kind: "code" | "design" | "canva";
 };
 
@@ -214,6 +216,16 @@ export const projectPreviews: ProjectPreview[] = [
     tags: ["Next.js", "TypeScript", "UI"],
     image: "/poznajmy-sie-cover.png",
     href: "https://github.com/dfbsx/PoznajmySie",
+    kind: "code",
+  },
+  {
+    name: "Letsmeet2026",
+    description:
+      "Refreshed PoznajmySie app with mocked backend for interactive testing and temporary account flow.",
+    tags: ["Next.js", "TypeScript", "UI"],
+    image: "/letsmeet2026-cover.png",
+    href: "https://github.com/dfbsx/letsmeet2026",
+    liveHref: "https://letsmeet2026.vercel.app/",
     kind: "code",
   },
   {
