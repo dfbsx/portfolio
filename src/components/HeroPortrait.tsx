@@ -10,6 +10,7 @@ export function HeroPortrait() {
         fill
         className="object-cover object-[center_20%]"
         sizes="(max-width: 768px) 60vw, (max-width: 1280px) 334px, 360px"
+        quality={100}
         priority
       />
     </div>

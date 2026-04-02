@@ -43,7 +43,7 @@ export default function Home() {
                     <span className="text-stone-500 dark:text-stone-500">
                       $
                     </span>{" "}
-                    figma_to_storybook_to_prod
+                    nice_to_see_you
                     <span className="animate-pulse text-rose-600 dark:text-rose-600">
                       ▌
                     </span>

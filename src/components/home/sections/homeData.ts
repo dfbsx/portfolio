@@ -145,7 +145,7 @@ export const experiences: ExperienceEntry[] = [
     range: "Sep 2022 — Sep 2022 (1 mo.)",
     location: "Rzeszów, Podkarpackie, Poland",
     highlights: [
-      "Short-term frontend engagement supporting the team’s web stack.",
+      "One-month student internship practice focused on supporting the team’s frontend web stack.",
     ],
     stack: ["HTML", "CSS", "JavaScript"],
   },
